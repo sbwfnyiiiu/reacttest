@@ -1,7 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+let sitename = 'CAICENT'
+let obj = {
+  fname : 'Lee',
+  lname : 'ChuanMiao',
+}
+const element = <h1>Welcome to { sitename }</h1>
+
+function cartoon(name,show){
+  return <div>
+    <h1 className="hello">Welcom to {name}</h1>
+    <h2>Show time is {show}</h2>
+  </div>
+}
 ReactDOM.render(
-  <h1>Welcome to CAICENT.</h1>,
+  cartoon('xxx','2018'),
     document.getElementById('root')
 );
